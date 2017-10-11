@@ -1,0 +1,5 @@
+Troubleshooting
+---------------
+
+If errors on startup, try removing the *.pyc files.  A problem with putting
+ultisnips in dropbox between different systems?

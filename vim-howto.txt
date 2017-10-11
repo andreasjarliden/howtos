@@ -1,0 +1,6 @@
+Jumping and tags
+----------------
+
+See: help tags
+Jump to tag under cursor: C-], rebound to <Leader>d
+Back in tags stack: C-T

@@ -1,0 +1,6 @@
+Disable a bundle
+----------------
+
+call add(g:pathogen_disabled, 'ultisnips')
+
+
