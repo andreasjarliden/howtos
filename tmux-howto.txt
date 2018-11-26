@@ -1,0 +1,15 @@
+TMUX How-To
+===========
+
+Move a pane to a different window
+---------------------------------
+
+Move to the pane to move
+
+C-b ! (to break the pane to its own window)
+C-b :join-pane -t :<window number>
+
+Note: - :<window number> is shorthand for [session]:window
+      - -t stands for target
+      - Use -s (source) instead to move a different window to the current
+        window
