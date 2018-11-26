@@ -1,0 +1,4 @@
+GDB How-To
+
+Conditional breakpoint
+	cond <breakpoint #> strcmp(arg1, "foo")==0

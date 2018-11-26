@@ -1,1 +1,4 @@
 breakpoint set -n foo
+breakpoint set -f filename.cpp -l <linenumber>
+bt - backtrace
+frame select <n>
