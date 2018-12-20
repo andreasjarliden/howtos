@@ -1,0 +1,1 @@
+- Update all rpms from Elekta repo only: sudo yum --disablerepo="*" --enablerepo="elekta" update

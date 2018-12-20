@@ -13,3 +13,13 @@ Note: - :<window number> is shorthand for [session]:window
       - -t stands for target
       - Use -s (source) instead to move a different window to the current
         window
+
+
+Avoid smallest common terminal size
+-----------------------------------
+
+Detach other sessions when attaching:
+
+$ tmux attach -d
+
+

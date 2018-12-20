@@ -1,0 +1,31 @@
+From Johan Falk
+
+ddrescue is perhaps available from the ELD yum repository installed on the machine, perhaps on cdrescue??
+
+Hej. 
+
+
+Ddrescue körs från en bootbar skiva typ cdrescue eller liknande. Obs nedan är
+En del skrivet med stora boostäver pga enklare att läsa L osv. Men ska vara små. 
+
+Det förutsätter att man mountat en sticka under /falk för logfilen. 
+
+Ddrescue 
+Kolla diskar med LSBLK -O NAME,LABEL , SIZE, fstype,model
+
+Kolla serienummer med 
+udevadm info --query=all --name=/dev/sda | grep ID_SERIAL
+
+Sedan 
+Ddrescue -f -r3 /dev/sda /dev/sdb /falk/logfilen,log
+
+Att kolla e2fsck på disken (despite name it is for ext2-4)
+
+
+Kör e2fsck -y /dev/sda1
+
+Sedan flr att köra på lvm
+
+E2fsck -p (eller y) /dev/volgroup1/rootvol
+
+A
